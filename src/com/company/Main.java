@@ -75,6 +75,7 @@ public class Main {
             System.out.println(rightTrianglesList);
         }
 
+        //Сохранение при завершение работы программы
         Packer.autoSaveNative(trianglesList,"simple");
         Packer.autoSaveNative(rightTrianglesList,"right");
         Packer.autoSaveJSON(trianglesListPrev, "simple");
@@ -82,6 +83,7 @@ public class Main {
 
         System.out.println("--------------------------------------------------------");
 
+        //Сохранение вручную
         Packer.saveNative(trianglesList, "Triangle");
         Packer.saveJSON(trianglesList, "TrianglesJSON");
         Packer.saveNative(rightTrianglesList,"rTriangle");
